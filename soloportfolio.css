@@ -1,0 +1,319 @@
+body {
+    margin:0px;
+    font-family: Ubuntu;
+    background-color: rgb(255, 241, 181);
+    padding: 0px
+}
+
+#sidebar {
+    position: fixed;
+    left: 0;
+    width: 30%;
+    background-color: rgb(87, 151, 87);
+    height: 100%;
+}
+
+#sidebar ul {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 0;
+    margin-top: 0
+}
+
+#sidebar li {
+    text-decoration: none;
+}
+
+#sidebar #header {
+    text-align: center;
+    padding: 30px;
+    font-weight: bold;
+    font-size: 30px;
+    background-color: rgb(76, 132, 76);
+    border: 5px rgb(205, 205, 205);
+    box-sizing: border-box;
+    color: white;
+}
+
+/*----------for not selected----------*/
+
+#sidebar ul .not {
+    padding: 10px;
+    line-height: 65px;
+    display: block;
+    transition: 0.5s;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    font-size: 25px;
+}
+
+#sidebar .not:hover {
+    padding: 10px;
+    line-height: 65px;
+    background-color: rgb(58, 98, 58);
+}
+
+#sidebar .not::before {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    background-color: white;
+    margin-top: 50px;
+    transition: all 0.5s;
+    
+}
+
+#sidebar .not:hover::before {
+    width: 97.5%;
+}
+
+/*----------for selected----------*/
+
+#sidebar ul #selected {
+    padding: 10px;
+    line-height: 65px;
+    display: block;
+    transition: 0.5s;
+    text-decoration: none;
+    color: rgb(248, 214, 111);
+    font-weight: 600;
+    font-size: 25px;
+    cursor: default;
+}
+
+
+#sidebar #selected::before {
+    content: '';
+    position: absolute;
+    width: 97.5%;
+    height: 2px;
+    background-color: rgb(248, 214, 111);
+    margin-top: 50px;
+    transition: all 0.5s;
+}
+
+.main {
+    width: 70%;
+    height: auto;
+    margin-left: 30%;
+    position: relative;
+    right: 0;
+    float: right;
+    margin-top:0;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0;
+}
+
+/*----------aboutme----------*/
+
+.headerbody {
+    background-image: url('https://images.pexels.com/photos/7613/pexels-photo.jpg?cs=srgb&dl=pexels-life-of-pix-7613.jpg&fm=jpg');
+    width: 100%;
+    height: 200px;
+    background-color: black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-position: bottom;
+}
+
+.headerbody h1 {
+    color: white;
+    font-size: 50px;
+    margin: 0;
+    z-index: 2;
+    padding: 0;
+    position: absolute;
+}
+
+.headerbody::before {
+    content: '';
+    background-color: rgba(0, 0, 0, 0.406);
+    width: 100%;
+    height: 100%;
+}
+
+#aboutmetext {
+    width: 100%;
+    background-color: rgb(49, 133, 49);
+    margin: top 0px;
+    margin: 0;
+    padding: 0;
+    height: 450px;
+    align-content: center;
+}
+
+#aboutmetext p {
+    float: left;
+    margin:15px;
+    text-align: center;
+    color: white;
+    font-size: 20px;
+    max-width: 65%;
+    margin-top: 10%;
+}
+
+#aboutmetext img {
+    height: 400px;
+    float: right;
+    border-radius: 10px;
+    margin-right: 20px;
+    align-items: center;
+} 
+
+#resumediv {
+    height: 800px;
+    align-content: center;
+    background-color:rgb(197, 218, 102);
+    color: white;
+}
+
+#resumediv h1 {
+    float: left;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+#resumediv iframe {
+    float: right;
+    margin-right: 20px;
+    width: 80%;
+    height: 700px;
+    border-radius: 10px;
+    border: none;
+}
+
+#firstyear {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(246, 224, 115);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#firstyear h1 {
+    padding: 10px;
+    margin: 0px;
+}
+
+.fa-medal {
+    font-size: 30px;
+}
+
+hr.solid {
+    border-top: 3px solid #f4bb35;
+  }
+
+  #secondyear {
+    width: 100%;
+    height: 400px;
+    background-color: rgb(230, 191, 0);
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+#secondyear h1 {
+    padding: 10px;
+    margin: 0px;
+}
+
+.details {
+    font-size: 20px;
+    text-align: left;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+#sidebarpic {
+    width: 150px;
+    border-radius: 10px;
+}
+
+#header h1 {
+    font-size: 40px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+#firstitem {
+    width: 100%;
+    height: 500px;
+    background-color: #f4bb35;
+    text-align: center;
+    color: white;
+}
+
+#firstitem p{ 
+    text-align: center;
+    color: white;
+    margin: 50px;
+    background-color: rgb(71, 146, 71);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#conference {
+    width: 100%;
+    height: 500px;
+    background-color: #f1c96c;
+    text-align: center;
+    color: white;
+}
+
+#conference p{ 
+    text-align: center;
+    color: white;
+    margin: 50px;
+    background-color: rgb(71, 146, 71);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#poster {
+    width: 100%;
+    height: 500px;
+    background-color: #dfaf47;
+    text-align: center;
+    color: white;
+}
+
+#poster p{ 
+    text-align: center;
+    color: white;
+    margin: 50px;
+    background-color: rgb(71, 146, 71);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+#firstitem img {
+    height: 300px;
+    position: center;
+}
+
+
+#conference img {
+    height: 300px;
+    position: center;
+}
+
+#poster img {
+    height: 300px;
+    position: center;
+}
